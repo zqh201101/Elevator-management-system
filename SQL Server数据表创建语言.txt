@@ -1,0 +1,47 @@
+
+
+create table elevator_information
+(
+id int IDENTITY (1,1) PRIMARY KEY , 
+所属项目 nchar(20),
+电梯品牌 nchar(20),
+维保单位 nchar(20),
+电梯类型 nchar(20),
+安装位置 nchar(20),
+维保合同起止时间 nchar(20),
+年检时间 nchar(20),
+巡逻点卡号 nchar(20),
+管理人 nchar(20)
+);
+
+create table elevator_extended_information
+(
+id int IDENTITY (1,1) PRIMARY KEY , 
+电梯类型 nchar(20),
+出厂日期 nchar(20),
+电梯梯龄 nchar(20),
+层站 nchar(20),
+额定载重 nchar(20),
+额定速度 nchar(20),
+出厂编号 nchar(20),
+注册标号 nchar(20),
+图片资料包括 nchar(20),
+注册登记表 nchar(20),
+验收合格证 nchar(20),
+使用登记证 nchar(20),
+电梯位置信息 nchar(50),
+经度 float,
+纬度 float
+);
+
+create table company_management
+(
+id int IDENTITY (1,1) PRIMARY KEY , 
+管辖范围 nchar(20),
+城市 nchar(20),
+地区 nchar(20),
+街道 nchar(20),
+地址 nchar(20),
+法人 nchar(20),
+联系电话 nchar(20)
+);
